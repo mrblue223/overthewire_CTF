@@ -9,8 +9,10 @@ In this callenge we see in the web page only users form "http://natas5.natas.lab
 
 ![Alt text for the image](natas5.png)
 
-Lets intercept the traffic with a tool like burpsuite to add a referer header to make it seem like where
+Lets intercept the traffic with a tool like burpsuite to add or change the referer header to make it seem like where
 comming from the website "http://natas5.natas.labs.overthewire.org/".
+
+What is it? : The "Referer" header in HTTP requests indicates the URL of the page from which the current request originated, essentially telling the server where the user came from
 
 After intercepting the traffic it should look like this after refreshing the page
 
