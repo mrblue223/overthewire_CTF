@@ -33,4 +33,5 @@ Then input the secret into the prompt and voila the password for natas9!
 
 ![Alt text for the image](natas9_2.png)
 
-## Mitigation: Dont leave your passwords in the source code, it's a bit oubious.
+## Mitigation: 
+To mitigate the Natas 8 vulnerability, which stems from relying on custom, reversible encoding for secrets, the fundamental principle is to never implement your own security-sensitive encoding or encryption algorithms. Instead, always use standard, peer-reviewed cryptographic libraries for tasks like password hashing (employing strong, one-way algorithms like Argon2 or bcrypt) or secure secret storage (keeping sensitive data outside the web root and accessing it via secure server-side mechanisms or dedicated secret management services), thereby avoiding any security by obscurity.
