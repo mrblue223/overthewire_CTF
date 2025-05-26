@@ -16,7 +16,12 @@ The $encodedSecret variable on the server is the result of these three steps app
 
 ## Vulnarability: misunderstanding and reversing a multi-stage encoding scheme
 
+First lets take a look at the source code!
 
-![Alt text for the image](Screenshot_2025-05-26_16-56-49.png)
+![Alt text for the image]()
+
+Now we will reverse engineer the secret by reversing the processe!
+
+In the .php script thats in the natas9 directory, it will decode the secret for us.
 
 ## Mitigation: Dont leave your passwords in the source code, it's a bit oubious.
