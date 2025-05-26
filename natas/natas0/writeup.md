@@ -1,6 +1,6 @@
 ## Name: Natas Level 0 → Level 1
 
-password:username
+password:username ->
 natas0:natas0
 
 ## Vulnarability: Hardcoded Credentials or Hardcoded Secrets
