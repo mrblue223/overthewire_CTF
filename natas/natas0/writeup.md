@@ -1,3 +1,5 @@
+## Name: natas0
+
 ## Vulnarability: Hardcoded Credentials or Hardcoded Secrets
 
 If we look at the source code we can see the password for natas1
