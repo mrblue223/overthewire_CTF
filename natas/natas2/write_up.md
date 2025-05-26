@@ -1,6 +1,6 @@
-## Name: Natas Level 1 → Level 2
+## Name: Natas Level 2 → Level 3
 
-usernmae:password -> natas2:
+usernmae:password -> natas3:3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 
 ## Vulnarability:
 
@@ -8,6 +8,10 @@ If we look at the source code we see a path to an image. "files/pixel.png" what 
 
 ![Alt text for the image](natas3.png)
 
-## Mitigation: Dont leave your passwords in the source code, it's a bit oubious.
+Then we can look at the user.txt file which will contain the users including natas3
+
+![Alt text for the image](natas3_1.png)
+
+## Mitigation: 
 
 
