@@ -30,7 +30,7 @@ Theres nothing much on the surface lets look at the source code!
 
 Voilaa, we see the secret and can input it for the password of natas7
 
-![Alt text for the image](natas7_3.png)
+![Alt text for the image](natas_3.png)
 
 ## Mitigation: 
 
