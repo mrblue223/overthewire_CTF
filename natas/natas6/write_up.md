@@ -33,5 +33,6 @@ Voilaa, we see the secret and can input it for the password of natas7
 ![Alt text for the image](natas_3.png)
 
 ## Mitigation: 
+To mitigate the Natas 6 vulnerability, sensitive files containing secrets, configuration data, or any information not intended for public access must be stored outside the web root directory. This prevents direct URL access. Instead, the application should include these files using a secure, absolute file path or through an internal, server-side mechanism that does not expose the file's content to the client, ensuring that the web server will not serve them directly.
 
 
