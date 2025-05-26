@@ -4,7 +4,7 @@ usernmae:password -> natas2:
 
 ## Vulnarability:
 
-If we look at the source code we see a path to an image. "<img src="files/pixel.png">"
+If we look at the source code we see a path to an image. "files/pixel.png" what if we take a look at the files directory!
 
 ![Alt text for the image](natas2.png)
 
