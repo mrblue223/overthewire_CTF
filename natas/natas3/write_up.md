@@ -9,9 +9,11 @@ First look at the source code we get a hint to where in the comments we see that
 
 robots.txt: A robots.txt file is a text file that website owners use to communicate with web crawlers and search engine bots, indicating which parts of the website they should and shouldn't access.
 
-![Alt text for the image](natas3.png)
+![Alt text for the image](natas4_1.png)
 
+We see a directory called "s3cr3t/"  lets look into that.
 
+![Alt text for the image](natas4_2.png)
 
 ## Mitigation: 
 
