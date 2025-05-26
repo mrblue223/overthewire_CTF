@@ -4,7 +4,7 @@ This repository serves as a collection of writeups for the https://overthewire.o
 
 Purpose of this Repository
 
-The primary goal of this repository is to:
+## The primary goal of this repository is to:
 
     Share Knowledge: Provide detailed explanations and walkthroughs for each wargame.
 
