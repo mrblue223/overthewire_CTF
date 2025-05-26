@@ -1,4 +1,4 @@
-## Name: natas0
+## Name: Natas Level 0 → Level 1
 
 ## Vulnarability: Hardcoded Credentials or Hardcoded Secrets
 
