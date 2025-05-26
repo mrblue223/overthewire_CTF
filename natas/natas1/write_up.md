@@ -6,7 +6,7 @@ usernmae:password -> natas1:TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
 
 If we look at the source code we can see the password for natas2
 
-![Alt text for the image]()
+![Alt text for the image](natas2.png)
 
 ## Mitigation: Dont leave your passwords in the source code, it's a bit oubious.
 
