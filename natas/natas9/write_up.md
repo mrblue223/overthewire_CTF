@@ -32,6 +32,6 @@ We know the password is in /etc/natas_webpass/natas10
 
 We can use this method to output the password. "?needle=;cat /etc/natas_webpass/natas10"
 
-![Alt text for the image](Screenshot_2025-05-26_16-56-49.png)
+![Alt text for the image](natas9_3.png)
 
 ## Mitigation: 
