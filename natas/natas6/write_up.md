@@ -12,7 +12,23 @@ The vulnerability arises because the secret.inc file is directly accessible via 
 
 First we get a look at the web page with the source code:
 
+The webpage
+![Alt text for the image](natas7_4.png)
+
+The sourcecode
 ![Alt text for the image](natas7.png)
+
+We can see the source code includes a directory  "includes/secret.inc" we can take a look at the directory and look at secret.inc.
+
+![Alt text for the image](natas7_1.png)
+
+Theres nothing much on the surface lets look at the source code!
+
+![Alt text for the image](natas7_2.png)
+
+Voilaa, we see the secret and can input it for the password of natas7
+
+![Alt text for the image](natas7_3.png)
 
 ## Mitigation: 
 
