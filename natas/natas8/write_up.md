@@ -1,7 +1,7 @@
-## Name: 
+## Name: Natas Level 8 → Level 9
 
 password:username ->
-natas9:
+natas9:ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t 
 
 ## The Trick
 When you examine the source code for Natas 8, you'll find a function, encodeSecret, and a predefined $encodedSecret variable. The application expects you to submit the original secret, which it then encodes using encodeSecret and compares to $encodedSecret.
@@ -18,7 +18,7 @@ The $encodedSecret variable on the server is the result of these three steps app
 
 First lets take a look at the source code!
 
-![Alt text for the image]()
+![Alt text for the image](natas9.png)
 
 Now we will reverse engineer the secret by reversing the processe!
 
@@ -27,10 +27,10 @@ You can run this code inside a php sandbox (https://onlinephp.io/).
 
 This will output the secret for us
 
-![Alt text for the image]()
+![Alt text for the image](natas9_1.png)
 
 Then input the secret into the prompt and voila the password for natas9!
 
-![Alt text for the image]()
+![Alt text for the image](natas9_2.png)
 
 ## Mitigation: Dont leave your passwords in the source code, it's a bit oubious.
