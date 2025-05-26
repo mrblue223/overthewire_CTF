@@ -1,2 +1,0 @@
-First we see a web page, lets look at the source code to see if the dev left his notes.
-![Alt text for the image](natas/natas0/images/Screenshot_2025-05-26_16-56-49.png)
