@@ -22,7 +22,7 @@ Then we change the "Referer" header to "http://natas5.natas.labs.overthewire.org
 
 ![Alt text for the image](natas5_2.png)
 
-Then after sending it back to the server we get our Access allowed and the password for the next level
+Then after sending it back to the server it tricks it into thinking we are comming from the oher site, and we get our password.
 
 ![Alt text for the image](natas5_3.png)
 
