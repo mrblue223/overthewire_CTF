@@ -12,7 +12,7 @@ The vulnerability arises because the secret.inc file is directly accessible via 
 
 First we get a look at the web page with the source code:
 
-
+![Alt text for the image](natas7.png)
 
 ## Mitigation: 
 
