@@ -1,7 +1,7 @@
 ## Name: Natas Level 5 → Level 6
 
 password:username ->
-natas5:
+natas6:0RoJwHdSKWFTYR5WuiAewauSuNaBXned
 
 ## Vulnarability: 
 
