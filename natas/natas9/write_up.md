@@ -12,7 +12,7 @@ In our case we our using "needle"
 
 First lets look at the sourcecode to see whats vulnrable!
 
-![Alt text for the image](Screenshot_2025-05-26_16-56-49.png)
+![Alt text for the image](10.png)
 
     User-Controlled Input: The $key variable directly takes user input from the needle parameter (via $_REQUEST).
     Direct Execution without Sanitization: The passthru() function is used to execute a shell command: grep -i $key dictionary.txt. The value of $key is inserted directly into this command string without any form of sanitization, escaping, or validation.
