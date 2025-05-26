@@ -20,5 +20,6 @@ Another directory listing we can find the password for natas4 in the users.txt f
 
 ![Alt text for the image](natas4_3.png)
 
-## Mitigation: To mitigate this, never disclose sensitive directory paths or plaintext credentials in robots.txt or any publicly accessible files; instead, protect secret directories with strong authentication and access controls, and store credentials securely using environment variables or a dedicated secrets management solution.
+## Mitigation: 
+To mitigate this, never disclose sensitive directory paths or plaintext credentials in robots.txt or any publicly accessible files; instead, protect secret directories with strong authentication and access controls, and store credentials securely using environment variables or a dedicated secrets management solution.
 
