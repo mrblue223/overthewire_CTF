@@ -13,4 +13,8 @@ We can intercept the traffic with burpsuite to change some infromation.
 
 ![Alt text for the image](natas6_1.png)
 
+Change Cookie loggedin=0 -> Cookie loggedin=1
+
+![Alt text for the image](natas6_2.png)
+
 ## Mitigation: 
