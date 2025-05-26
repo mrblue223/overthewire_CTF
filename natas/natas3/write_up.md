@@ -3,7 +3,7 @@
 password:username ->
 natas4:QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
  
-## Vulnarability:
+## Vulnarability: Information Disclosure & Sensitive Data Exposure & Security Misconfiguration
 
 First look at the source code we get a hint to where in the comments we see that "not even google will find it" hint meaning robots.txt
 
@@ -20,5 +20,5 @@ Another directory listing we can find the password for natas4 in the users.txt f
 
 ![Alt text for the image](natas4_3.png)
 
-## Mitigation: 
+## Mitigation: To mitigate this, never disclose sensitive directory paths or plaintext credentials in robots.txt or any publicly accessible files; instead, protect secret directories with strong authentication and access controls, and store credentials securely using environment variables or a dedicated secrets management solution.
 
