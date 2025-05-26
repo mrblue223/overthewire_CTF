@@ -23,5 +23,14 @@ First lets take a look at the source code!
 Now we will reverse engineer the secret by reversing the processe!
 
 In the .php script thats in the natas9 directory, it will decode the secret for us.
+You can run this code inside a php sandbox (https://onlinephp.io/).
+
+This will output the secret for us
+
+![Alt text for the image]()
+
+Then input the secret into the prompt and voila the password for natas9!
+
+![Alt text for the image]()
 
 ## Mitigation: Dont leave your passwords in the source code, it's a bit oubious.
