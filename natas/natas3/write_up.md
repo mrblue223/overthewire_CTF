@@ -15,5 +15,10 @@ We see a directory called "s3cr3t/"  lets look into that.
 
 ![Alt text for the image](natas4_2.png)
 
+Another directory listing we can find the password for natas4 in the users.txt file!
+
+
+![Alt text for the image](natas4_3.png)
+
 ## Mitigation: 
 
