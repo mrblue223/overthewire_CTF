@@ -20,9 +20,9 @@ First lets take a look at the source code!
 
 ![Alt text for the image](natas9.png)
 
-Now we will reverse engineer the secret by reversing the processe!
+If you check "The Trick" it explains the steps of what the code is doing. Now we will reverse engineer the secret by reversing the processe!
 
-In the .php script thats in the natas9 directory, it will decode the secret for us.
+In the natas8 irectory theres the script "script.php", it will decode the secret for us.
 You can run this code inside a php sandbox (https://onlinephp.io/).
 
 This will output the secret for us
