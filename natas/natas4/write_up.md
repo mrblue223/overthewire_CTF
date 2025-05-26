@@ -1,9 +1,9 @@
 ## Name: Natas Level 4 → Level 5
 
 password:username ->
-natas5:
+natas5:0n35PkggAPm2zbEpOU802c0x0Msn1ToK
 
-## Vulnarability: 
+## Vulnarability: Referer Spoofing
 
 In this callenge we see in the web page only users form "http://natas5.natas.labs.overthewire.org/" are allowed.
 
@@ -27,4 +27,5 @@ Then after sending it back to the server we get our Access allowed and the passw
 ![Alt text for the image](natas5_3.png)
 
 ## Mitigation: 
+To mitigate Referer spoofing, never rely solely on the Referer header for security-sensitive decisions like authentication or access control; instead, implement stronger, server-side validation mechanisms such as anti-CSRF tokens, explicit origin checks, or session-based authentication.
 
