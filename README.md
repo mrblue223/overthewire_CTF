@@ -1,4 +1,4 @@
-## Natas CTF Writeups
+## CTF Writeups
 
 This repository serves as a collection of writeups for the https://overthewire.org/wargames/ CTF. It's a collaborative space for documenting solutions and learning from various approaches to these challenges.
 
