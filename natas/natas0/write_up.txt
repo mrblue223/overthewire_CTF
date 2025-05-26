@@ -1,2 +1,2 @@
 First we see a web page, lets look at the source code to see if the dev left his notes.
-![natas0]()
+![natas0](natas/natas0/images)
