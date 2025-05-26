@@ -1,7 +1,7 @@
 ## Name: 
 
 password:username ->
-natas8:
+natas8:xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q 
 
 ## The Trick: 
 When you interact with Natas 7, you'll see links like "Home" and "About" that modify the URL, typically looking something like index.php?page=home or index.php?page=about. This indicates that the application is taking the value of the page parameter and likely using it in a file inclusion function (e.g., include($_GET['page']) in PHP).
