@@ -11,26 +11,38 @@ The core trick in Natas12 is to bypass the web application's assumed file type f
 
 First lets look at the code
 
-![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
+![Alt text for the image](source_code_13.png)
 
 Then lets try to upload our payload to the webserver with burpsuite.
 
-![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
+![Alt text for the image](upload_payload.png)
 
 Change the .jpeg -> .php to get our shell.
 
-![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
+![Alt text for the image](changing_payload_name.png)
+
+![Alt text for the image](change_payload_2.png)
+
+Lets click on our upload file 
+
+![Alt text for the image](click_on_link.png)
 
 Lets us ls to list all files in the current directory!
+
+![Alt text for the image](click_on_link.png)
+
+We have a shell!
+
+![Alt text for the image](we_have_a_shell.png)
 
 Lets get our password: 
 
 Make sure you put the payload in the url, should look like this = http://natas12.natas.labs.overthewire.org/upload/dyw9rnl8hc.php?cmd=cat%20/etc/natas_webpass/natas13
 
-![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
+![Alt text for the image](change_url_13.png)
 
 And we get our password
 
-![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
+![Alt text for the image](the_password_13.png)
 
 ## Mitigation: 
