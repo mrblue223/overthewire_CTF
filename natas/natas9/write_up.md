@@ -17,7 +17,7 @@ First lets look at the sourcecode to see whats vulnrable!
     User-Controlled Input: The $key variable directly takes user input from the needle parameter (via $_REQUEST).
     Direct Execution without Sanitization: The passthru() function is used to execute a shell command: grep -i $key dictionary.txt. The value of $key is inserted directly into this command string without any form of sanitization, escaping, or validation.
 
-This lack of input validation allows an attacker to inject shell metacharacters (like ;, |, &&, ||, &, etc.) into the needle parameter. When the passthru() function executes the command, these injected characters will be interpreted by the shell, allowing the attacker to execute arbitrary commands on the server alongside or instead of the intended grep command.
+This lack of input validation allows us to inject shell metacharacters (like ;, |, &&, ||, &, etc.) into the needle parameter. When the passthru() function executes the command, these injected characters will be interpreted by the shell, allowing the attacker to execute arbitrary commands on the server alongside or instead of the intended grep command.
 
 Means we can append a shell command separator (like ;) followed by the desired command. 
 
