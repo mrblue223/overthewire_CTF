@@ -1,8 +1,7 @@
-
 ## Name: Natas Level 12 → Level 13
 
 password:username ->
-natas13:
+natas13:trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
 
 ## The Trick: 
 
@@ -10,8 +9,28 @@ The core trick in Natas12 is to bypass the web application's assumed file type f
 
 ## Vulnarability: file upload with an insecure file extension filter, leading to remote code execution.
 
+First lets look at the code
 
+![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
 
-![Alt text for the image](Screenshot_2025-05-26_16-56-49.png)
+Then lets try to upload our payload to the webserver with burpsuite.
+
+![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
+
+Change the .jpeg -> .php to get our shell.
+
+![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
+
+Lets us ls to list all files in the current directory!
+
+Lets get our password: 
+
+Make sure you put the payload in the url, should look like this = http://natas12.natas.labs.overthewire.org/upload/dyw9rnl8hc.php?cmd=cat%20/etc/natas_webpass/natas13
+
+![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
+
+And we get our password
+
+![Alt text for the image](Screensho_2025-05-26_16-56-49.png)
 
 ## Mitigation: 
