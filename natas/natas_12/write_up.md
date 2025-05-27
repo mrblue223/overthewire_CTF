@@ -27,13 +27,14 @@ Lets click on our upload file
 
 ![Alt text for the image](click_on_link.png)
 
+We have a shell!
+
+![Alt text for the image](we_have_a_shell.png)
+
 Lets us ls to list all files in the current directory!
 
 ![Alt text for the image](ls_command_13.png)
 
-We have a shell!
-
-![Alt text for the image](we_have_a_shell.png)
 
 Lets get our password: 
 
