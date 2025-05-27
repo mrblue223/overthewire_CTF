@@ -13,6 +13,32 @@ First lets look at the code
 
 ![Alt text for the image](source_code_13.png)
 
+    La requête a abouti
+
+This PHP code is for a file upload system. Here's a simple explanation and why it's vulnerable:
+
+What it does:
+
+    genRandomString(): Creates a random 10-character string using numbers and lowercase letters.
+    makeRandomPath($dir, $ext): Generates a unique filename for an uploaded file. It combines a random string, a directory ($dir), and a file extension ($ext). It keeps trying until it finds a filename that doesn't already exist.
+    makeRandomPathFromFilename($dir, $fn): This is the crucial part. It takes the original filename ($fn) that the user provided (e.g., "myimage.jpg") and extracts only the extension (e.g., "jpg") using pathinfo($fn, PATHINFO_EXTENSION). It then uses this extracted extension to create the new random path.
+    Main Upload Logic:
+        Checks if a "filename" was submitted in the form.
+        Generates the $target_path using makeRandomPathFromFilename, meaning the new, random filename will end with the extension extracted from the user's original filename.
+        Checks if the uploaded file is larger than 1000 bytes (0.97 KB).
+        If the file size is okay, it moves the uploaded file from its temporary location to the $target_path.
+
+Why it's vulnerable:
+
+The vulnerability lies in how the makeRandomPathFromFilename function determines the file's extension. It simply takes the extension from the user-provided filename, without any validation or whitelisting of allowed extensions.
+
+This means:
+
+    You can upload a PHP file directly: If you name your file shell.php, the code will extract .php as the extension, generate a random filename like ajkdlf123.php, and then save your malicious PHP file with a .php extension on the server.
+    Remote Code Execution: Once your .php file (containing a webshell, for example) is uploaded, you can then access it via a web browser. Since it's a PHP file, the web server will execute its code, allowing you to run arbitrary commands on the server.
+
+In essence, the code blindly trusts the file extension provided by the user, leading to a critical flaw where an attacker can upload and execute server-side scripts.
+
 Then lets try to upload our payload to the webserver with burpsuite.
 
 ![Alt text for the image](upload_payload.png)
