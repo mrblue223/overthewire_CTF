@@ -41,3 +41,4 @@ The grep -i . command would run (searching for any character, which typically wo
 ![Alt text for the image](natas9_3.png)
 
 ## Mitigation: 
+To mitigate against command injection vulnerabilities like the one in Natas 9, never directly concatenate unsanitized user input into shell commands. Instead, use functions designed to safely execute external programs, such as escapeshellarg() for arguments and escapeshellcmd() for the entire command in PHP, or pass arguments as an array to proc_open() or symfony/process component in more complex scenarios, ensuring that all user-supplied data is treated as literal arguments and not as executable commands or options. Additionally, consider alternative, safer methods for executing tasks, such as dedicated API calls or libraries, instead of shelling out to system commands whenever possible.
