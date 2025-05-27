@@ -11,21 +11,22 @@ Natas11's vulnerability stems from its use of predictable XOR encryption for ses
 
 Here is the web page (Hints that its zor encrypted)
 
-![Alt text for the image](Screenshot_2025-05-26_16-56-49.png)
+![Alt text for the image](natas12_webpage.png)
 
 More details on how to break the encryption here (https://en.wikipedia.org/wiki/XOR_cipher)
 
 First lets look at the source code
 
-![Alt text for the image](Screenshot_2025-05-26_16-56-49.png)
+![Alt text for the image](natas12_source_code.png)
 
 This PHP code manages user settings like a "show password" option and a background color, storing them securely in a browser cookie. It loads existing preferences, decrypting and decoding them from the cookie, and then applies them, or uses defaults if no cookie exists. If a new valid background color is provided in the web request, it updates the preference and saves the modified (encrypted and encoded) settings back into the cookie.
 
 Using the script "script.php" you can find your xor secret key make your cookie and upload it via your webtools in your browser or with burpsuite. 
 This will give us the password for natas12!
 
-![Alt text for the image](Screenshot_2025-05-26_16-56-49.png)
+![Alt text for the image](natas12_password.png)
 
 ## Mitigation: 
+To mitigate the Natas11 vulnerability, the primary step is to avoid custom, insecure encryption like XOR for sensitive data in cookies. Instead, leverage PHP's built-in, cryptographically secure session management, which stores session data server-side and only sends a non-guessable session ID to the client via a cookie. Furthermore, always use HTTPS to encrypt all traffic, enable the HttpOnly cookie flag to prevent client-side script access, and utilize the Secure cookie flag to ensure cookies are only sent over HTTPS, significantly reducing the risk of cookie theft and manipulation.
 
 
