@@ -29,7 +29,7 @@ Lets click on our upload file
 
 Lets us ls to list all files in the current directory!
 
-![Alt text for the image](click_on_link.png)
+![Alt text for the image](ls_command_13.png)
 
 We have a shell!
 
