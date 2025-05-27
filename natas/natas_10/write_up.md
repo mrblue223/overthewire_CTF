@@ -14,6 +14,6 @@ You can use "u" to bypass this -> "u /etc/natas_webpass/natas11"
 We can input "u /etc/natas_webpass/natas11"
 This will ouput the password for natas11
 
-![Alt text for the image]()
+![Alt text for the image](natas11.png)
 
 ## Mitigation: 
