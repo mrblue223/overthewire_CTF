@@ -17,3 +17,5 @@ This will ouput the password for natas11
 ![Alt text for the image](natas11.png)
 
 ## Mitigation: 
+To prevent command injection vulnerabilities like Natas10, the most effective strategy is strict input validation and sanitization. This means always whitelisting acceptable input, meticulously escaping all shell metacharacters if user input must be part of a command, and ideally, avoiding direct system calls in favor of safer, language-specific APIs. Additionally, running the web server with the principle of least privilege significantly limits the potential damage if an injection somehow occurs.
+
