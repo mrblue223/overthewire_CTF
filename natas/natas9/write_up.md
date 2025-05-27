@@ -32,7 +32,11 @@ This will show list the files in the current directory whcih is "dictionary.txt"
 
 We know the password is in /etc/natas_webpass/natas10
 
-We can use this method to output the password. "?needle=;cat /etc/natas_webpass/natas10" this also works with alot of other commands such as "grep -i .; cat /etc/natas_webpass/natas10 dictionary.txt"
+We can use this method to output the password. "?needle=;cat /etc/natas_webpass/natas10" this also works with alot of other commands such as 
+
+"grep -i .; cat /etc/natas_webpass/natas10 dictionary.txt"
+
+The grep -i . command would run (searching for any character, which typically works and produces output), and then the ; separator would allow the cat /etc/natas_webpass/natas10 command to execute, printing the password to the screen.
 
 ![Alt text for the image](natas9_3.png)
 
