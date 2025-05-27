@@ -66,6 +66,8 @@ Lets get our password:
 
 Make sure you put the payload in the url, should look like this = http://natas12.natas.labs.overthewire.org/upload/dyw9rnl8hc.php?cmd=cat%20/etc/natas_webpass/natas13
 
+Specificaly this part: "cat%20/etc/natas_webpass/natas13" it executes the cat command to get the password
+
 ![Alt text for the image](change_url_13.png)
 
 And we get our password
