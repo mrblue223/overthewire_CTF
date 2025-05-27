@@ -35,7 +35,7 @@ The vulnerability lies in how the makeRandomPathFromFilename function determines
 This means:
 
     You can upload a PHP file directly: If you name your file shell.php, the code will extract .php as the extension, generate a random filename like ajkdlf123.php, and then save your malicious PHP file with a .php extension on the server.
-    Remote Code Execution: Once your .php file (containing a webshell, for example) is uploaded, you can then access it via a web browser. Since it's a PHP file, the web server will execute its code, allowing you to run arbitrary commands on the server.
+    Remote Code Execution: Once your .php file (containing a webshell, for example) is uploaded, you can then access it via a web browser. Since it's a PHP file, the web server will execute its code, allowing you to run arbitrary commands on the server, like what we did below :) .
 
 In essence, the code blindly trusts the file extension provided by the user, leading to a critical flaw where an attacker can upload and execute server-side scripts.
 
