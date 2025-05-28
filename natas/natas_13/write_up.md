@@ -11,6 +11,7 @@ Upload the crafted file: Upload this "polyglot" file to the server.
 Locate the uploaded file: Determine the URL or path where the uploaded file is stored.
 Then click on the link, you can execute a shell or just cat the password like we did.
 
+More info on file signatures: https://en.wikipedia.org/wiki/List_of_file_signatures
 
 ## Vulnarability: File Upload Functionality & Insufficient File Type Validation & Bypass with Magic Bytes (File Signature) & Directory Traversal/Path Disclosure
 
@@ -86,5 +87,5 @@ Upload it to the server and visit the link and voila you have the password.
 ![Alt text for the image](password.png)
 
 ## Mitigation: 
-
+To mitigate the Natas 13 vulnerability, implement strict file type whitelisting by verifying the actual content of uploaded files (e.g., using finfo_file()) and only allowing specific, safe extensions like .jpg or .png, while ignoring user-provided filename extensions. Crucially, store uploaded files outside the web root to prevent direct execution, and serve them via a secure script that enforces access control and sets appropriate content headers. Additionally, generate unique, random filenames to prevent overwrites and path traversal, and enforce robust file size limits to prevent denial-of-service.
 
