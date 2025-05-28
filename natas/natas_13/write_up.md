@@ -14,25 +14,25 @@ Execute commands: Access the uploaded file via its URL and pass commands as a GE
 
 ## Vulnarability: File Upload Functionality & Insufficient File Type Validation & Bypass with Magic Bytes (File Signature) & Directory Traversal/Path Disclosure
 
-Lets look at the sourc code shall we :)
+Lets look at the source code shall we :)
 
 ![Alt text for the image](the_password_13.png)
 
 First lets craft our pyaload! We add the magic bytes of the jpeg to the .php payload to trick the server into thinking its an image.
 
-![Alt text for the image](the_password_13.png)
+![Alt text for the image](payload.png)
 
 With burp suite intercept the payload while you upload it
 
-![Alt text for the image](the_password_13.png)
+![Alt text for the image](burp_14.png)
 
 Change the name of the payload to the original name in my case "image.php".
 
-![Alt text for the image](the_password_13.png)
+![Alt text for the image](change_burp.png)
 
 Upload it to the server and visit the link and voila you have the password. 
 
-![Alt text for the image](the_password_13.png)
+![Alt text for the image](password.png)
 
 ## Mitigation: 
 
