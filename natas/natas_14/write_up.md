@@ -11,7 +11,7 @@ Natas 14 demonstrates a classic SQL Injection vulnerability where a web applicat
 
 The source code
 
-![Alt text for the image](source_code.png)
+![Alt text for the image](source_code_15.png)
 
 The login page
 
