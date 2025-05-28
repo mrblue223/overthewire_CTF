@@ -9,14 +9,14 @@ Craft a malicious PHP file, that allows for arbitrary command execution.
 Add image magic bytes: Prepend the PHP script with the magic bytes of an image format (e.g., \xff\xd8\xff for JPEG). This makes the file look like a valid image to the server's validation.
 Upload the crafted file: Upload this "polyglot" file to the server.
 Locate the uploaded file: Determine the URL or path where the uploaded file is stored.
-Execute commands: Access the uploaded file via its URL and pass commands as a GET parameter (e.g., http://natas13.natas.labs.overthewire.org/upload/your_file.php?cmd=cat+/etc/natas_webpass/natas14). This will execute the PHP code and display the output of the command.
+Then click on the link, you can execute a shell or just cat the password like we did.
 
 
 ## Vulnarability: File Upload Functionality & Insufficient File Type Validation & Bypass with Magic Bytes (File Signature) & Directory Traversal/Path Disclosure
 
 Lets look at the source code shall we :)
 
-![Alt text for the image]()
+![Alt text for the image](source_code_13.png)
 
 Trusting the User-Provided Filename for Extension Determination:
 
