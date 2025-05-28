@@ -4,7 +4,7 @@ import re
 characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 username = "natas15"
-password = "SdqIqBsFcz3yotlNYErZSZwblkm0lrvx"
+password = "SdqIqBsFcz3yotlNYErZSZwblkm0lrvx" ## If the password changes make sure to change it here!
 
 url = "http://natas15.natas.labs.overthewire.org"
 
