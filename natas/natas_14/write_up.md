@@ -17,7 +17,11 @@ The login page
 
 ![Alt text for the image](source_code_13.png)
 
-Our payload, i found 3 SQL injections that work il put them as natas14.txt.
+Our payloads we can do
+
+1. " or 1 = 1 #
+2. " or 1=1 -- -
+3. " or ""="
 
 ![Alt text for the image](source_code_13.png)
 
