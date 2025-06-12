@@ -1,10 +1,10 @@
-## Name: Natas Level 15 → Level 16
+## Name: Natas Level 16 → Level 17
 
 password:username ->
-natas0:
+natas17:EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
 
 ## Vulnarability: command injection through blacklist bypass
-Use the script I provided called "natas16.py" to crack the 
+Use the script I provided called "natas16.py" to crack the password for natas17
 
 
 ![Alt text for the image](Screenshot_2025-05-26_16-56-49.png)
