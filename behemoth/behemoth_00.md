@@ -29,3 +29,18 @@ You shouldent need my help for this if your doing behemoth :P
 ### 🔑 Conclusion
 
 The critical line is `strcmp("blah", "eatmyshorts")`, which reveals that the **correct password** for the program is **`eatmyshorts`**.
+
+### Rerun only the program and enter the password we found
+    password:eatmyshorts
+
+        behemoth0@behemoth:/behemoth$ ./behemoth0 
+        Password: eatmyshorts
+        Access granted..
+        $ whoami
+        behemoth1
+        $ cat /etc/behemoth_pass/behemoth1
+        8YpAQCAuKf
+        $ 
+
+
+        
